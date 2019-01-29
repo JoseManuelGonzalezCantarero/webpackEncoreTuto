@@ -14,6 +14,8 @@ Encore
         from: './assets/static',
         to: 'static/[path][name].[ext]'
     })
+    .enableSassLoader()
+    .enableSourceMaps(!Encore.isProduction())
 ;
 // export the final configuration
 module.exports = Encore.getWebpackConfig();
