@@ -16,6 +16,8 @@ Encore
     })
     .enableSassLoader()
     .enableSourceMaps(!Encore.isProduction())
+    .cleanupOutputBeforeBuild()
+    .enableVersioning()
 ;
 // export the final configuration
 module.exports = Encore.getWebpackConfig();
