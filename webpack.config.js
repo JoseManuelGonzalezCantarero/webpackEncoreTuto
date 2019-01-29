@@ -9,6 +9,7 @@ Encore
     .addEntry('login', './public/assets/js/login.js')
     .addEntry('layout', './public/assets/js/layout.js')
     .enableBuildNotifications()
+    .autoProvidejQuery()
 ;
 // export the final configuration
 module.exports = Encore.getWebpackConfig();
