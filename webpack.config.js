@@ -19,6 +19,7 @@ Encore
     .enableSourceMaps(!Encore.isProduction())
     .cleanupOutputBeforeBuild()
     .enableVersioning()
+    .enableReactPreset()
 ;
 // export the final configuration
 module.exports = Encore.getWebpackConfig();
