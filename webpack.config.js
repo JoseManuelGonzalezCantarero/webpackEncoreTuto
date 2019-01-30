@@ -1,4 +1,4 @@
-var Encore = require('@symfony/webpack-encore');
+const Encore = require('@symfony/webpack-encore');
 
 Encore
 // the project directory where all compiled assets will be stored
@@ -8,6 +8,7 @@ Encore
     .createSharedEntry('layout', './assets/js/layout.js')
     .addEntry('rep_log', './assets/js/rep_log.js')
     .addEntry('login', './assets/js/login.js')
+    .addEntry('rep_log_react', './assets/js/rep_log_react.js')
     .enableBuildNotifications()
     .autoProvidejQuery()
     .copyFiles({
