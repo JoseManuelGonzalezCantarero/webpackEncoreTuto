@@ -8,8 +8,3 @@ render(
     <RepLogApp withHeart={shouldShowHeart}/>,
     document.getElementById('lift-stuff-app')
 );
-
-render(
-    <RepLogApp withHeart={shouldShowHeart} />,
-    document.getElementById('lift-stuff-app')
-);

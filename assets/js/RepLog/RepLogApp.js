@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
 
 export default class RepLogApp extends Component{
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            highlightedRowId: null
+        }
+    }
     render() {
+        const { withHeart } = this.props;
         let heart = '';
-        if (this.props.withHeart) {
+        const { highlightedRowId } = this.state;
+
+        if (withHeart) {
             heart = <span>❤️</span>;
         }
         const repLogs = [
@@ -26,7 +36,7 @@ export default class RepLogApp extends Component{
                     </thead>
                     <tbody>
                     {repLogs.map((repLog) => (
-                        <tr key={repLog.id}>
+                        <tr key={repLog.id} className={highlightedRowId === repLog.id ? 'info' : ''}>
                             <td>{repLog.itemLabel}</td>
                             <td>{repLog.reps}</td>
                             <td>{repLog.totalWeightLifted}</td>
