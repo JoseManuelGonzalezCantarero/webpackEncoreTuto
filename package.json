@@ -2,6 +2,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
     "@symfony/webpack-encore": "^0.22.4",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "bootstrap": "3",
     "eslint": "^5.12.1",
     "eslint-plugin-react": "^7.12.4",
