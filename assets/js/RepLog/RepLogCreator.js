@@ -25,6 +25,12 @@ export default class RepLogCreator extends Component {
         const quantityInput = this.quantityInput.current;
         const itemSelect = this.itemSelect.current;
 
+        if (quantityInput.value <= 0) {
+            // TODO - print some validation error!
+            // don't submit, or clear the form
+            return;
+        }
+
         console.log('I love when a good form submits!');
         console.log(quantityInput.value);
         console.log(itemSelect.options[itemSelect.selectedIndex].value);
