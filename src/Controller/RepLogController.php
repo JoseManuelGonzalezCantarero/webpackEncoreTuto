@@ -83,8 +83,8 @@ class RepLogController extends BaseController
 
         $apiModel = $this->createRepLogApiModel($repLog);
 
-        //$response = $this->createApiResponse($apiModel);
-        $response = new Response(null, 204);
+        $response = $this->createApiResponse($apiModel);
+        //$response = new Response(null, 204);
         // setting the Location header... it's a best-practice
         $response->headers->set(
             'Location',
