@@ -9,13 +9,15 @@
     "font-awesome": "4",
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
+    "promise-polyfill": "^8.1.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "sass-loader": "^7.1.0",
     "sweetalert2": "^8.0.3",
     "uuid": "^3.3.2",
-    "webpack-notifier": "^1.7.0"
+    "webpack-notifier": "^1.7.0",
+    "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
     "dev-server": "encore dev-server",
