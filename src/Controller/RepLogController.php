@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Api\ApiRoute;
 use App\Entity\RepLog;
 use App\Form\Type\RepLogType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -10,6 +11,9 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
+/**
+ * @ApiRoute
+ */
 class RepLogController extends BaseController
 {
     /**
